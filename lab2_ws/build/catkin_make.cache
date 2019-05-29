@@ -1,0 +1,2 @@
+rtk_gps_pkg
+-DCATKIN_DEVEL_PREFIX=/home/liyanglin/lab2_ws/devel -DCMAKE_INSTALL_PREFIX=/home/liyanglin/lab2_ws/install -G Unix Makefiles

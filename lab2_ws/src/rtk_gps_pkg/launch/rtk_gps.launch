@@ -1,0 +1,10 @@
+<launch>
+    <arg name="port_name" default ="/dev/ttyACM0"/>
+    <arg name="baud_rate" default ="57600" />
+    <node pkg="rtk_gps_pkg" type="rtk_gps_node.py" name="rtk_gps_node_name">
+        <param name="port_name" type="string" value="/dev/ttyACM0"/>
+        <param name="baud_rate" type="int" value="57600"/>
+    </node>
+    <node pkg="rtk_gps_pkg" type="gps2utm_node.py" name="gps2utm_node_name" >
+    </node>
+</launch>
